@@ -2,15 +2,19 @@
 #ifndef jfjf
 #define jfjf
 
+class multifunc;
+
 class mathfunc{
     public:
-    double Calculate(double x);
-    double Integrate();
-    void DFT(int n);
-    mathfunc*Clone();
+    mathfunc(int type);
+    virtual double Calculate(double x) const=0;
+    double Integrate() const;
+    ultifunc void DFT(int n);
+    virtual mathfunc*Clone();
     private:
     double x;
     int n;
+    int type;
 
 };
 
