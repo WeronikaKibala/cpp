@@ -9,7 +9,7 @@ class mathfunc{
     mathfunc(int type);
     virtual double Calculate(double x) const=0;
     double Integrate() const;
-    ultifunc void DFT(int n);
+    multifunc void DFT(int n);
     virtual mathfunc*Clone();
     private:
     double x;

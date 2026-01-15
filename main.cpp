@@ -1,19 +1,19 @@
 #include <iostream>
 #include <cstdlib>
 #include "mathfunc.h"
-int main(int argc, char**argv){
+int main(int type, char*argv()){
 
-    int type=atoi(argc);
+    std::string argv;
     int w=atoi(argv);
     mathfunc *f;
 
-    if(argc==0){
+    if(type==0){
         f=new stepfunc;
     }
-    else if(argc==1){
+    else if(type==1){
         f= new sinfunc;
     }
-    else if(argc==2){
+    else if(type==2){
         f= new cosfunc;
     }
 
